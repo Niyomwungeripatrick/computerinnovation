@@ -1,0 +1,174 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #ffffff;
+    line-height: 1.6;
+}
+
+.navs{
+    background: #001c47;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 80px;
+    border-bottom: 1px solid #000a30;
+}
+.search{
+
+    padding: 5px;
+    border: 1px solid #00103f;
+    border-radius: 5px;
+    outline: none;
+}
+.search::placeholder{
+    color: #ffffff;
+    /* background-color: white; */
+}
+.logo{
+    width: 80px;
+
+}
+.navs a{
+    text-decoration: none;
+    color: #b7ceff;
+    margin: 0 10px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+h3{
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin-left: -100px;
+}
+.about{
+    background: #011a4720;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* width: 50%; */
+}
+.navs a:hover{
+    background: #ff8502ea;
+    color: #fff;
+    width: 70px;
+    text-align: center;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+
+h1{
+    color: #001d5c;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+h2{
+    color: #001d5c;
+    margin-bottom: 10px;
+}
+
+button{
+    width: 110px;
+    height: 40px;
+    background: #ff8c00;
+    border: none;
+    color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    background: #0384f4;
+}
+
+
+.hero{
+    text-align: center;
+    background: url(images-removebg-preview.png) no-repeat center;
+    background-size: contain;
+    padding: 80px 20px;
+}
+
+.contents{
+    display: flex;
+    gap: 20px;
+    padding: 50px 80px;
+    flex-wrap: wrap;
+}
+
+.services,
+.news,
+.testimonials,
+.team{
+    background: #011a4720;
+    border-radius: 12px;
+    padding: 20px;
+    flex: 1 1 220px;
+    min-height: 200px;
+    transition: 0.3s;
+}
+
+.services:hover,
+.news:hover,
+.testimonials:hover,
+.team:hover{
+    transform: translateY(-5px);
+}
+
+ul{
+    padding-left: 20px;
+}
+
+.contact{
+    padding: 50px 80px;
+}
+
+.contact input,
+.contact textarea{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+
+.newsletter{
+    text-align: center;
+    padding: 40px;
+    background: #f4f4f4;
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+    background: #001d5c;
+    color: white;
+}
+
+@media (max-width: 768px){
+    .navs{
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .contents{
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .hero{
+        padding: 40px 20px;
+    }
+}
